@@ -2,29 +2,61 @@
     font-family:Poppins;
     src: url(assets/font/Poppins-Light.ttf);
 }
+
+@media only screen and (max-width: 1440px) {
+
   body{
     margin: 0;
     padding: 0;
   } 
+  
+  /*----------------------------------- Header -----------------------------------  */
 
-  /*
-    ----------------------------------- Header -----------------------------------  
-  */
- header{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
   background-color: white;
-  position: absolute;
-  top: 0px;
   width: 100%;
   box-shadow: 0px 4px 24px -6px rgba(22, 63, 80, 0.15);
- }
+  margin:0;
+  padding:0;
+  }
+
   .header-container{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+  }
+
+  .header-container-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+  }
+
+  .header-container-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+
   }
 
   .header-menu-left{
     list-style: none;
     display: flex;
     justify-items: flex-start;
+    padding: 0 138px 0 46PX;
   }
 
   .header-menu-content-left{
@@ -42,6 +74,7 @@
     list-style: none;
     display: flex;
     justify-items: flex-end;
+    padding: 0 0 0 138px;
   }
 
   .header-menu-content-right{
@@ -52,14 +85,13 @@
     font-style: normal;
     font-weight: normal;
     color: #163F50;
-    padding: 24px 34px 23px 0px;
+    padding: 25px 34px 24px 0px;
   }
 
   .header-logo{
-    display: inline-block;
-    justify-items: center;
-    width: 51.04px;
-    height: 40;
+    padding: 13px 34px;
+    width: 51.4px;
+    height: 40px;
   }
 
   .header-menu-search{
@@ -71,34 +103,32 @@
   .header-menu-accont{
     width: 16px;
     height: 22px;
-    padding: 24px 34px 23px 0px;
+    padding: 22px 33px 22px 0px;
   }
 
   .header-menu-cart{
     width: 22px;
     height: 23px;
-    padding: 24px 34px 23px 0px;
+    padding: 22px 34px 21px 0px;
   }
 
 
-  /*
-    ----------------------------------- Footer -----------------------------------  
-  */
-
+  /* ----------------------------------- Footer ----------------------------------- */
 
   footer{
-   position: absolute;
-   bottom: 0px;
-   width: 100%;
-   background-color: #FFECC7;
+    width: 100%;
+    background-color: #FFECC7;
+    height: 435px;
   }
 
   .footer-content{
     margin: 0;
-    padding: 88px 0 160px 0;
+    padding: 88px 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #FFECC7;
   }
 
@@ -123,6 +153,11 @@
     color: #003F52;
   }
 
+  .footer-table-content-logo-style{
+    margin: 0;
+    padding: 0 100px 8px 0;
+  }
+
   .footer-item-bolder{
     font-family: Poppins;
     font-style: normal;
@@ -137,28 +172,28 @@
     font-size: 12px;
     text-align: left;
     color: #003F52;
-
   }
-  
+    
   .footer-instagram-img{
-      height: 28px;
-      width: 28px;
-      
+    height: 28px;
+    width: 28px;    
   }
+    
   .footer-facebook-img{
     height: 28px;
-    width: 15px;
-    
-}
- .footer-twitter-img{
+    width: 15px;  
+  }
+
+  .footer-twitter-img{
     height: 26px;
     width: 31px;
-}
+  }
+
   dl{
     display: inline-block;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 8%;
   }
-    
+      
   hr{
     border-color: white;
     padding: 0;
@@ -167,7 +202,7 @@
     border-radius: 2px;
     width: 100%;
   }
-  
+    
   .footer-list-content{
     list-style-type: none;
     display: flex;
@@ -177,6 +212,7 @@
   .footer-small-content{
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
     font-size: 14px;
     line-height: 17px;
     color: #7F8B8F;
@@ -185,31 +221,274 @@
 
   .footer-small-list-container{
     position: relative;
-
   }
+
   .detalheTexto{
     font-style: s
   }
-  
+    
   .logo{
-    display: flex;
-    justify-content: flex-start;
     width: 47.59px;
     height: 37.3px;
-    margin: 0;
-    padding: 0;
   }
-
 
   .hr1{
     background-color:#FFBF00 ;
   }
+
   .hr2{
     background-color:#FF9A1E ;
-}
+  }
+
   .hr3{
     background-color:#F15E1F ;
-}
+  }
+
   .hr4{
     background-color:#E7381C ;
+  }
+}
+
+/* --------------------------------- telas Maiores que 1440px ---------------------------------  */
+
+body{
+  margin: 0;
+  padding: 0;
+} 
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+/*----------------------------------- Header -----------------------------------  */
+
+header{
+background-color: white;
+width: 100%;
+box-shadow: 0px 4px 24px -6px rgba(22, 63, 80, 0.15);
+margin:0;
+padding:0;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+
+.header-container-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+
+.header-container-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+
+.header-menu-left{
+  list-style: none;
+  display: flex;
+  justify-items: flex-start;
+  padding: 0 138px 0 46PX;
+}
+
+.header-menu-content-left{
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  color: #163F50;
+  padding: 24px 34px 23px 0px;
+}
+
+.header-menu-right{
+  list-style: none;
+  display: flex;
+  justify-items: flex-end;
+  padding: 0 0 0 138px;
+}
+
+.header-menu-content-right{
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  color: #163F50;
+  padding: 25px 34px 24px 0px;
+}
+
+.header-logo{
+  padding: 13px 34px;
+  width: 51.4px;
+  height: 40px;
+}
+
+.header-menu-search{
+  width: 19px;
+  height: 19px;
+  padding: 24px 34px 23px 0px;
+}
+
+.header-menu-accont{
+  width: 16px;
+  height: 22px;
+  padding: 22px 33px 22px 0px;
+}
+
+.header-menu-cart{
+  width: 22px;
+  height: 23px;
+  padding: 22px 34px 21px 0px;
+}
+
+
+/* ----------------------------------- Footer ----------------------------------- */
+
+footer{
+  width: 100%;
+  background-color: #FFECC7;
+  height: 435px;
+}
+
+.footer-content{
+  margin: 0;
+  padding: 88px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #FFECC7;
+}
+
+.footer-section-header{
+  padding:25px 0 15px 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  color: #163F50;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-table-content-style{
+  margin: 0;
+  padding: 0 0 8px 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: left;
+  color: #003F52;
+}
+
+.footer-table-content-logo-style{
+  margin: 0;
+  padding: 0 100px 8px 0;
+}
+
+.footer-item-bolder{
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 16px;
+  color: #163F50;
+  font-weight: bold;
+}
+
+.footer-item-special{
+  margin: 0;
+  padding: 0 0 8px 0;
+  font-size: 12px;
+  text-align: left;
+  color: #003F52;
+}
+  
+.footer-instagram-img{
+  height: 28px;
+  width: 28px;    
+}
+  
+.footer-facebook-img{
+  height: 28px;
+  width: 15px;  
+}
+
+.footer-twitter-img{
+  height: 26px;
+  width: 31px;
+}
+
+dl{
+  display: inline-block;
+  margin: 0 0 0 8%;
+}
+    
+hr{
+  border-color: white;
+  padding: 0;
+  margin: 0;
+  height: 3px;
+  border-radius: 2px;
+  width: 100%;
+}
+  
+.footer-list-content{
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-small-content{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7F8B8F;
+  padding: 78px 49px 65px 0 ;
+}
+
+.footer-small-list-container{
+  position: relative;
+}
+
+.detalheTexto{
+  font-style: s
+}
+  
+.logo{
+  width: 47.59px;
+  height: 37.3px;
+}
+
+.hr1{
+  background-color:#FFBF00 ;
+}
+
+.hr2{
+  background-color:#FF9A1E ;
+}
+
+.hr3{
+  background-color:#F15E1F ;
+}
+
+.hr4{
+  background-color:#E7381C ;
 }
