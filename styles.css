@@ -1,0 +1,129 @@
+@font-face{
+    font-family:Poppins;
+    src: url(assets/font/Poppins-Light.ttf);
+}
+  body{
+    margin: 0;
+    padding: 0;
+  }  
+  .footer-container{
+    height: 25%;
+    width: 100%;
+    background-color: #FFECC7;
+  }
+
+  .footer-content{
+    margin: 0 235px 0 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-section-header{
+    padding:25px 0 15px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 16px;
+    color: #163F50;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .footer-table-content-style{
+    margin: 0;
+    padding: 0 0 8px 0;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #003F52;
+  }
+
+  .footer-item-bolder{
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 16px;
+    color: #163F50;
+    font-weight: bold;
+  }
+
+  .footer-item-special{
+    margin: 0;
+    padding: 0 0 8px 0;
+    font-size: 12px;
+    text-align: left;
+    color: #003F52;
+
+  }
+  
+  .footer-instagram-img{
+      height: 28px;
+      width: 28px;
+      
+  }
+  .footer-facebook-img{
+    height: 28px;
+    width: 15px;
+    
+}
+ .footer-twitter-img{
+    height: 26px;
+    width: 31px;
+}
+  dl{
+    display: inline-block;
+    margin: 0 20px 0 20px;
+  }
+    
+  hr{
+    border-color: white;
+    padding: 0;
+    margin: 0;
+    height: 3px;
+    border-radius: 2px;
+    width: 100%;
+  }
+  
+
+ 
+  
+  .footer-list-content{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 15px 0;
+    display: flex;
+    justify-content: right;
+  }
+  
+  li{
+    font-size: 14px;
+    line-height: 17px;
+    color: #7F8B8F;
+    padding: 0 10px;
+  }
+  
+  .detalheTexto{
+    font-style: s
+  }
+  
+  .logo{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .hr1{
+    background-color:#FFBF00 ;
+  }
+  .hr2{
+    background-color:#FF9A1E ;
+}
+  .hr3{
+    background-color:#F15E1F ;
+}
+  .hr4{
+    background-color:#E7381C ;
+}
